@@ -6,7 +6,7 @@
 from math import pi
     
 def pi_generator(stop = 0.001):
-    """ generate the series 4*(1 - 1/3 + 1/5 - 1/7 ...) progressively approximating π
+    """ generate series 4*(1 - 1/3 + 1/5 - 1/7 ...), according to the Leibniz formula for π.
     """
     a = 0.0
     sign = 1.0
@@ -30,7 +30,9 @@ def accel(g):
         s0, s1, s2 = s1, s2, g.next()
         
         
-        
-        
+def f(g, n):
+    for i in range(n):
+        yield g.next()
+
         
 
